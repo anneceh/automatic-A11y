@@ -16,8 +16,14 @@ https://code.visualstudio.com/
 * cd into the project catalog: `cd automatic-A11y`
 * Install dependencies with `npm install`
 
+## Part 1 - Unit Tests with Jest-Axe
 
-## Exercise 1 - Run the example
+## Exercise 1 -  Run the example
 * cd into the app catalog: `cd a11y-app`
 * Run tests with `npm test`
 * There is an accessibility error! Fix it
+
+## Part 2 - Integration Tests with Cypress
+## Exercise - Run the example
+* cd into the app catalog: `cd a11y-app`
+* Open cypress with `npx cypress open`

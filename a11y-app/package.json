@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^9.0.0",
     "jest-axe": "^5.0.1"
   }
 }
