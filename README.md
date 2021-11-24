@@ -16,14 +16,35 @@ https://code.visualstudio.com/
 * cd into the project catalog: `cd automatic-A11y`
 * Install dependencies with `npm install`
 
-## Part 1 - Unit Tests with Jest-Axe
+## Part 1 - Semi-automatic testing with Google lighthouse
+* Open Chrome or Edge and go to a web page of choice
+* Open developer tools
+Windows: Ctrl + Shift + I
+Mac: Command + Option + I
+* Select Accessibility and generate report
+* Answer the following: 
+* What is the accessibility score?
+* What kind of errors did the audit find?
+* What kind of errors did the audit not find? 
 
-## Exercise 1 -  Run the example
+## Part 2 - Unit Testing with Jest-Axe
+
+If you’re unable to get the project up and running, use the code pen instead: https://codepen.io/anneceh/pen/LJzbry
+
+## Exercise 2.1 -  Run the example
 * cd into the app catalog: `cd a11y-app`
-* Run tests with `npm test`
-* There is an accessibility error! Fix it
+* start the app with `npm start`
+* Run the tests with `npm test`
+* How many errors are found?
 
-## Part 2 - Integration Tests with Cypress
+## Exercise 2.2 - Change the configuration
+* Configure the tests to ignore the errors.  
+* Tip: read the documentation https://github.com/nickcolley/jest-axe
+
+## Exercise 2.3 - Fix the errors
+* Change the configuration back and fix the errors instead of ignoring them
+
+## Part 3 - Integration Tests with Cypress
 ## Exercise - Run the example
 * cd into the app catalog: `cd a11y-app`
 * Open cypress with `npx cypress open`
