@@ -45,6 +45,14 @@ If you’re unable to get the project up and running, use the code pen instead: 
 * Change the configuration back and fix the errors instead of ignoring them
 
 ## Part 3 - Integration Tests with Cypress
-## Exercise - Run the example
+
+## Exercise 3.1 - Run the example
 * cd into the app catalog: `cd a11y-app`
 * Open cypress with `npx cypress open`
+
+## Exercise 3.2 - Change the configuration
+* Configure the tests to ignore the errors.  
+* Tip: read the documentation: https://github.com/component-driven/cypress-axe
+
+## Exercise 3.3 Write your own test
+* Write your own test where you check accessibility, add a couple of todos and then check accessibility again

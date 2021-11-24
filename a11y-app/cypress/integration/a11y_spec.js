@@ -1,5 +1,10 @@
-describe('My First Integration Test for Accessibility', () => {
-    it('Visits the Clothes4All demo page', () => {
-      cy.visit('https://clothes4all.netlify.com/')
+beforeEach(() => {
+    cy.visit('http://localhost:3000')
+    cy.injectAxe()
+  })
+
+describe('Todo app', () => {
+    it('Should be accessible', () => {
+        cy.checkA11y()
     })
   })
