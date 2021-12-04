@@ -70,8 +70,8 @@ function App() {
         <FormTodo addTodo={addTodo} />
         <img src={logo} className="App-logo" />
         <div>
+          <ul>
           {todos.map((todo, index) => (
-            <ul>
                 <Todo
                 key={index}
                 index={index}
@@ -79,8 +79,8 @@ function App() {
                 markTodo={markTodo}
                 removeTodo={removeTodo}
                 />
-            </ul>
           ))}
+          </ul>
         </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
