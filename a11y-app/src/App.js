@@ -1,26 +1,29 @@
 import React from "react";
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function Todo({ todo, index, markTodo, removeTodo }) {
   return (
-    <div
-      className="todo"
-      
-    >
-      <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>{todo.text}</span>
-      <div>
-        <button className="outline-success" onClick={() => markTodo(index)}>✓</button>{' '}
-        <button className="outline-danger" onClick={() => removeTodo(index)}>✕</button>
-      </div>
-    </div>
+    <li className="todo">
+      <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>
+        {todo.text}
+      </span>
+      <span>
+        <button className="outline-success" onClick={() => markTodo(index)}>
+          ✓
+        </button>{" "}
+        <button className="outline-danger" onClick={() => removeTodo(index)}>
+          ✕
+        </button>
+      </span>
+    </li>
   );
 }
 
 function FormTodo({ addTodo }) {
   const [value, setValue] = React.useState("");
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) return;
     addTodo(value);
@@ -31,7 +34,13 @@ function FormTodo({ addTodo }) {
     <form onSubmit={handleSubmit}>
       <label>
         Add Todo:
-        <input type="text"  className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
+        <input
+          type="text"
+          className="input"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="Add new todo"
+        />
       </label>
       <input type="submit" value="Submit" />
     </form>
@@ -42,22 +51,22 @@ function App() {
   const [todos, setTodos] = React.useState([
     {
       text: "Be nice",
-      isDone: false
-    }
+      isDone: false,
+    },
   ]);
 
-  const addTodo = text => {
+  const addTodo = (text) => {
     const newTodos = [...todos, { text }];
     setTodos(newTodos);
   };
 
-  const markTodo = index => {
+  const markTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].isDone = true;
     setTodos(newTodos);
   };
 
-  const removeTodo = index => {
+  const removeTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
@@ -68,18 +77,18 @@ function App() {
       <header className="App-header">
         <h3>TODO List </h3>
         <FormTodo addTodo={addTodo} />
-        <img src={logo} className="App-logo" />
+        <img src={logo} className="App-logo" alt="To Do" />
         <div>
           <ul>
-          {todos.map((todo, index) => (
-                <Todo
+            {todos.map((todo, index) => (
+              <Todo
                 key={index}
                 index={index}
                 todo={todo}
                 markTodo={markTodo}
                 removeTodo={removeTodo}
-                />
-          ))}
+              />
+            ))}
           </ul>
         </div>
         <p>
