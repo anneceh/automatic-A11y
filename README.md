@@ -1,6 +1,6 @@
 # automatic-A11y
 Code used in Cecilie's Course Automatic Accessibility Testing for All
-Slides: https://docs.google.com/presentation/d/1-EJPDA1OuwaNoKdWQ4x4tGf3yD4jqf65yCfUlL_udLc/edit?usp=sharing
+Slides: https://docs.google.com/presentation/d/1TWj3xB15xCqhh93roIp2EzU2ib4r1JxKaanjlksimRw/edit?usp=sharing
 
 ## Resources ##
 * Git
@@ -15,6 +15,7 @@ https://code.visualstudio.com/
 * Download and install Node.js. Instructions here: https://nodejs.org/
 * Clone project from Github: `git clone https://github.com/anneceh/automatic-A11y/`
 * cd into the project catalog: `cd automatic-A11y`
+* cd into the app catalog: `cd a11y-app`
 * Install dependencies with `npm install`
 
 ## Part 1 - Semi-automatic testing with Google lighthouse
