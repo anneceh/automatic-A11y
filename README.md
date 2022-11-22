@@ -1,6 +1,6 @@
 # automatic-A11y
 Code used in Cecilie's Course Automatic Accessibility Testing for All
-Slides: https://docs.google.com/presentation/d/1LNsP-31L3onwooG12NhHXy6e0YfGtzoy8Bab4kMptfk/edit?usp=sharing
+Slides: https://docs.google.com/presentation/d/1-KI2xtE9_PpKIKh-YOoZbppbQQsGfOll2AKm0WtTlUI/edit?usp=sharing
 
 ## Resources ##
 * Git
