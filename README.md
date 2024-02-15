@@ -18,7 +18,9 @@ https://code.visualstudio.com/
 * cd into the app catalog: `cd a11y-app`
 * Install dependencies with `npm install`
 
-## Part 1 - Semi-automatic testing with Google lighthouse
+
+
+## Part 0 - Semi-automatic testing with Google lighthouse
 * Open Chrome or Edge and go to a web page of choice
 * Open developer tools
 Windows: Ctrl + Shift + I
@@ -28,6 +30,13 @@ Mac: Command + Option + I
 * What is the accessibility score?
 * What kind of errors did the audit find?
 * What kind of errors did the audit not find? 
+
+## Part 1 - Linting
+
+## Exercise 1 -  Run the example
+* cd into the app catalog: `cd a11y-app`
+* start the app with `npm start`
+* How many accessibility errors are found by eslint? 
 
 ## Part 2 - Unit Testing with Jest-Axe
 
@@ -58,3 +67,9 @@ If you’re unable to get the project up and running, use the code pen instead: 
 
 ## Exercise 3.3 Write your own test
 * Write your own test where you check accessibility, add a couple of todos and then check accessibility again
+
+# Common errors #
+* You get code ENOENT when you run `npm install`
+* Problem: you are in the wrong directory
+* Solution: cd into the app catalog: `cd a11y-app` and run `npm install`
+

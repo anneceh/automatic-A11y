@@ -68,7 +68,7 @@ function App() {
       <header className="App-header">
         <h3>TODO List </h3>
         <FormTodo addTodo={addTodo} />
-        <img src={logo} className="App-logo" />
+        <img src={logo} className="App-logo"/>
         <div>
           <ul>
           {todos.map((todo, index) => (
