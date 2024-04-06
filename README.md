@@ -60,6 +60,8 @@ If you’re unable to get the project up and running, use the code pen instead: 
 ## Exercise 3.1 - Run the example
 * cd into the app catalog: `cd a11y-app`
 * Open cypress with `npx cypress open`
+* Run the tests
+* Read more about the errors found at https://dequeuniversity.com/rules/axe/4.1/
 
 ## Exercise 3.2 - Change the configuration
 * Configure the tests to ignore the errors.  
