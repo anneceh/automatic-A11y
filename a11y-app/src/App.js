@@ -28,7 +28,7 @@ function FormTodo({ addTodo }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form class="form" onSubmit={handleSubmit}>
       <label>
         Add Todo:
         <input aria-label="Write todo item" type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />

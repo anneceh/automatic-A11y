@@ -25,7 +25,17 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #045b73;
+}
+
+.input {
+  min-height: 2rem;
+}
+
+.form, .form label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @keyframes App-logo-spin {
