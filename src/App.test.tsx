@@ -1,10 +1,10 @@
 import 'vitest-axe/extend-expect'
 import { render } from '@testing-library/react'
-import { expect, test } from "vitest"
-import { axe } from "vitest-axe"
+import { expect, test } from 'vitest'
+import { axe } from 'vitest-axe'
 
-import * as matchers from "vitest-axe/matchers"
-import type { AxeMatchers } from "vitest-axe/matchers"
+import * as matchers from 'vitest-axe/matchers'
+import type { AxeMatchers } from 'vitest-axe/matchers'
 
 import App from './App.tsx'
 
