@@ -1,6 +1,10 @@
-# automatic-A11y
+# automatic-A11y - an example app for automatic accessibility testing with React + TypeScript + Vite
+
+Using https://testing-library.com/
+
 Code used in Cecilie's Course Automatic Accessibility Testing for All
 Slides: https://docs.google.com/presentation/d/1-KI2xtE9_PpKIKh-YOoZbppbQQsGfOll2AKm0WtTlUI/edit?usp=sharing
+
 
 ## Resources ##
 * Git
@@ -8,7 +12,7 @@ Windows: Git for Windows
 Mac or Unix: do nothing, git’s already installed
 
 * Code editor.
-I will use Visual Studio Code, feel free to use what
+I will use Visual Studio Code, feel free to use what you want
 https://code.visualstudio.com/
 
 ## Getting started ##
@@ -17,6 +21,7 @@ https://code.visualstudio.com/
 * cd into the project catalog: `cd automatic-A11y`
 * cd into the app catalog: `cd a11y-app`
 * Install dependencies with `npm install`
+* Start the app with `npm run dev`
 
 
 
@@ -74,4 +79,3 @@ If you’re unable to get the project up and running, use the code pen instead: 
 * You get code ENOENT when you run `npm install`
 * Problem: you are in the wrong directory
 * Solution: cd into the app catalog: `cd a11y-app` and run `npm install`
-
