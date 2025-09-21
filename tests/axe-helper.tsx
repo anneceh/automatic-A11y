@@ -1,4 +1,4 @@
-const { configureAxe } = require('jest-axe')
+const { configureAxe } = require('vitest-axe')
 
 const axe = configureAxe({
   rules: {
@@ -7,4 +7,4 @@ const axe = configureAxe({
   impactLevels: ['critical','serious','moderate','minor']
 })
 
-module.exports = axe
+export default axe
