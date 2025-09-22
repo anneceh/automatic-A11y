@@ -5,8 +5,8 @@ import { expect, test } from 'vitest'
 import * as matchers from 'vitest-axe/matchers'
 import type { AxeMatchers } from 'vitest-axe/matchers'
 
-import axe from '../tests/axe-helper.tsx'
-import App from '../src/App.tsx'
+import axe from './axe-helper.tsx'
+import App from '../App.tsx'
 
 expect.extend(matchers)
 
